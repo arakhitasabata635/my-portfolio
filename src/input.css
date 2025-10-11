@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+
+  --background: 48 8% 3%;
+  --foreground: 0 0% 100%;
+  --card: 49 9% 8%;
+  --card-foreground: 50 90% 55%;
+  --popover: 49 9% 8%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 48 100% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 48 30% 15%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 48 20% 12%;
+  --muted-foreground: 50 30% 88%;
+  --accent: 50 98% 55%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 4 90% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 48 12% 18%;
+  --input: 48 12% 18%;
+  --ring: 50 100% 55%;
+  --radius: .75rem;
+  --gradient-primary: linear-gradient(135deg, hsl(48 100% 55%), hsl(38 95% 55%), hsl(0 0% 100% / .12));
+  --gradient-secondary: linear-gradient(135deg, hsl(48 30% 15%), hsl(0 0% 100% / .1), hsl(49 9% 8%));
+  --gradient-accent: linear-gradient(135deg, hsl(50 98% 55% / .15), hsl(0 0% 100% / .14), hsl(38 95% 55% / .1));
+  --gradient-hero: linear-gradient(135deg, hsl(48 8% 3%), hsl(0 0% 100% / .04), hsl(48 30% 10%));
+  --shadow-glow: 0 0 40px hsl(48 100% 65% / .16), 0 0 8px hsl(0 0% 100% / .06);
+  --shadow-card: 0 8px 32px hsl(48 8% 3% / .48), 0 2px 8px hsl(0 0% 100% / .04);
+  --shadow-hover: 0 16px 64px hsl(48 100% 65% / .22), 0 4px 12px hsl(0 0% 100% / .1);
+  --transition-smooth: all .3s cubic-bezier(.4, 0, .2, 1);
+  --transition-bounce: all .4s cubic-bezier(.68, -.55, .265, 1.55);
+  --sidebar-background: 48 8% 4%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 48 100% 55%;
+  --sidebar-primary-foreground: 48 8% 4%;
+  --sidebar-accent: 0 0% 100%;
+  --sidebar-accent-foreground: 48 98% 55%;
+  --sidebar-border: 48 12% 18%;
+  --sidebar-ring: 50 100% 60%;
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  .text-gradient {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card {
+    --tw-shadow-color: hsl(var(--card));
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .gradient-primary {
+    background-image: linear-gradient(135deg, rgb(255, 209, 26), rgb(249, 169, 31), rgba(255, 255, 255, 0.12));
+  }
+
+  .bg-primary {
+    background-color: hsl(var(--primary));
+  }
+
+  .glass-effect {
+    background: hsl(var(--card) / .8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / .5);    
+  }
+
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .bg-accent:hover {
+    background-color: hsl(var(--accent));
+  }
+
+  .text-accent-foreground:hover {
+    color: hsl(var(--accent-foreground));
+  }
+  .bg-card {
+    background-color: hsl(var(--card));
+}
+
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-3px);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in .6s ease-out;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  /* about me */
+
+  .text-card-foreground {
+    color: hsl(var(--card-foreground));
+  }
+
+  .text-secondary-foreground {
+    color: hsl(var(--secondary-foreground));
+  }
+
+  .bg-secondary {
+    background-color: hsl(var(--secondary));
+  }
+  .text-primary {
+    color: hsl(var(--primary));
+}
+.text-primary:hover{
+  color: hsl(var(--primary) / .8);
+}
+
+/* Footer */
+.border-border {
+    border-color: hsl(var(--border));
+}
+}
+
+button,
+[role=button] {
+  cursor: pointer;
+}
