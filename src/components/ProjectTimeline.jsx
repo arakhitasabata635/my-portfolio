@@ -2,28 +2,46 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Country Flag Explorer",
-    image: "./src/assets/country-flag.png",
-    tech: ["React", "Tailwind CSS", "REST API"],
-    description:
-      "Browse countries with flags, population, and region filters. Responsive UI with clean UX.",
-    link: "https://github.com/arakhitasabata635/country-flag-using-react",
-  },
-  {
-    title: "Airbnb Clone",
-    image: "./src/assets/airbnb.png",
-    tech: ["React", "Redux", "Node.js", "MongoDB"],
-    description:
-      "Authentication, property listing, booking flow, and protected routes.",
-    link: "#",
-  },
-  {
     title: "ArkCart (E‑commerce)",
     image: "./src/assets/ecommers.png",
     tech: ["React", "Redux Toolkit", "Stripe"],
     description:
       "Cart management, checkout, user login, and order summary with toast alerts.",
     link: "#",
+  },
+  {
+    title: "Airbnb Clone (Full-Stack)",
+    image: "./src/assets/airbnb.png",
+    tech: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "EJS",
+      "Tailwind CSS",
+      "Session Authentication",
+      "Multer",
+    ],
+    description:
+      "A full-stack Airbnb-like web application with authentication, role-based access (Guest & Host), home listings, image uploads, favourites, and session-based login. Hosts can add, edit, and delete homes, while guests can browse, view details, and manage favourites.",
+    features: [
+      "User authentication with encrypted passwords (bcrypt)",
+      "Role-based access for Host and Guest users",
+      "CRUD operations for home listings",
+      "Image upload using Multer",
+      "Session management with MongoDB session store",
+      "Add / remove homes from favourites",
+      "Responsive UI using Tailwind CSS",
+    ],
+    link: "https://github.com/arakhitasabata635/airbnb-clone",
+  },
+  {
+    title: "Country Flag Explorer",
+    image: "./src/assets/country-flag.png",
+    tech: ["React", "Context API", "React Router", "REST API", "CSS"],
+    description:
+      "A responsive React application that displays country details using the REST Countries API. Features include search and region-based filtering, dark/light theme toggle, dynamic routing for country details, border-country navigation, and shimmer loading for better UX.",
+    link: "https://github.com/arakhitasabata635/country-flag-using-react",
   },
 ];
 
