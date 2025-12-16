@@ -5,6 +5,7 @@ import Education from "./components/Education";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import ProjectTimeline from "./components/ProjectTimeline";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <main >
           <HeroSection></HeroSection>
           <AboutSection></AboutSection>
+          <ProjectTimeline></ProjectTimeline>
           <Education></Education>
           <CodingProfile></CodingProfile>
           <Contact></Contact>

@@ -4,7 +4,7 @@ const HeroSection = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/hero-bg.jpg"
+            src="./src/assets/hero-bg.jpg"
             alt="Hero background"
             className="w-full h-full object-cover opacity-20"
           />
