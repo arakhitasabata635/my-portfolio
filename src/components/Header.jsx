@@ -13,15 +13,6 @@ const Header = () => {
     { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
   ];
-  const handleClick = (href) => {
-    setIsOpen(false);
-    if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const section = document.querySelector(href);
-      if (section) section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,22 +32,22 @@ const Header = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <button
-            onClick={() => handleClick("#")}
+            <a
+            href="#"
              className="text-xl font-bold text-gradient hover:scale-105 transition-transform">
               AS
-            </button>
+            </a>
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => {
                 return (
-                  <button
+                  <a
                     key={link.href}
-                    onClick={() => handleClick(link.href)}
-                    className="text-foreground hover:text-primary transition-colors relative group"
+                    href={link.href}
+                    className="text-foreground hover:text-primary transition-colors relative group cursor-pointer"
                   >
                     {link.label}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 gradient-primary transition-all duration-300 group-hover:w-full"></span>
-                  </button>
+                  </a>
                 );
               })}
               <a
@@ -124,7 +115,7 @@ const Header = () => {
               )}
             </button>
           </div>
-          <NavPupUp isOpen={isOpen} handleClick={handleClick} navLinks={navLinks} />
+          <NavPupUp isOpen={isOpen} setIsOpen={setIsOpen} navLinks={navLinks} />
         </div>
       </nav>
     </>

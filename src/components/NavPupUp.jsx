@@ -1,17 +1,19 @@
-const NavPupUp = ({ isOpen, handleClick, navLinks }) => {
+const NavPupUp = ({ isOpen, setIsOpen, navLinks }) => {
   if (!isOpen) return null;
+  console.log(navLinks);
   return (
     <div className=" md:hidden text-white absolute top-full left-0 right-0 glass-effect border-t border-border animate-fade-in">
       <div className="container mx-auto px-4 py-4 space-y-4">
         {navLinks.map((link) => {
           return (
-            <button
-              key={link.href}
-              onClick={() => handleClick(link.href)}
+            <a
+              onClick={() => setIsOpen(false)}
+              key={link.label}
+              href={link.href}
               className="block w-full text-left py-2 px-4 rounded-lg bg-card transition-colors"
             >
               {link.label}
-            </button>
+            </a>
           );
         })}
         <a
