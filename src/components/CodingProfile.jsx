@@ -72,15 +72,15 @@ const CodingProfile = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Total Solved</span>
-                  <span className="font-bold text-xl text-gradient">150</span>
+                  <span className="font-bold text-xl text-gradient">17</span>
                 </div>
                 <div className="grid grid-cols-3 gap-2 text-center">
                   <div className="p-2 rounded-lg bg-green-500/10">
-                    <div className="text-green-400 font-bold">100</div>
+                    <div className="text-green-400 font-bold">15</div>
                     <div className="text-xs text-muted-foreground">Easy</div>
                   </div>
                   <div className="p-2 rounded-lg bg-yellow-500/10">
-                    <div className="text-yellow-400 font-bold">50</div>
+                    <div className="text-yellow-400 font-bold">2</div>
                     <div className="text-xs text-muted-foreground">Medium</div>
                   </div>
                   <div className="p-2 rounded-lg bg-red-500/10">
@@ -88,6 +88,7 @@ const CodingProfile = () => {
                     <div className="text-xs text-muted-foreground">Hard</div>
                   </div>
                 </div>
+                <div className="text-muted-foreground">I solved 35+ pattern problems, some array and string problems myself.</div>
               </div>
             </div>
             <div
@@ -147,11 +148,11 @@ const CodingProfile = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Repositories</span>
-                  <span className="font-bold text-xl text-gradient">15</span>
+                  <span className="font-bold text-xl text-gradient">17</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Contributions</span>
-                  <span className="font-semibold">200</span>
+                  <span className="font-semibold">200+</span>
                 </div>
               </div>
             </div>

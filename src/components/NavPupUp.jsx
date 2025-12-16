@@ -1,6 +1,5 @@
 const NavPupUp = ({ isOpen, setIsOpen, navLinks }) => {
   if (!isOpen) return null;
-  console.log(navLinks);
   return (
     <div className=" md:hidden text-white absolute top-full left-0 right-0 glass-effect border-t border-border animate-fade-in">
       <div className="container mx-auto px-4 py-4 space-y-4">

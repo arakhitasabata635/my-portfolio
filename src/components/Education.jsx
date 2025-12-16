@@ -78,7 +78,7 @@ const Education = () => {
                         <path d="M3 10h18"></path>
                       </svg>
                       <span>
-                        2023 - Present (Lateral Entry, 7th Semester Ongoing)
+                        2023 - Present (Lateral Entry, 8th Semester Ongoing)
                       </span>
                     </div>
                     <div className="flex items-start gap-2 ">

@@ -36,7 +36,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/arakhita-abc-416bb237b/"
+              href="https://www.linkedin.com/in/arakhita-sabata-416bb237b/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg glass-effect hover-glow transition-smooth"
