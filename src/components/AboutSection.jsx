@@ -1,5 +1,8 @@
-
 const AboutSection = () => {
+  const frontend = ["React", "Bootstrap", "HTML5", "Tailwind CSS", "CSS3"];
+  const backend = ["Node.js", "Express.js", "MongoDB", "mySql"];
+  const tools = ["Git", "GitHub", "VS Code", "Figma"];
+
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -17,7 +20,13 @@ const AboutSection = () => {
               <div className="rounded-lg border  text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth">
                 <h3 className="text-2xl font-semibold mb-4">My Story</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  I am a fresher MERN stack developer with a strong passion for building web applications. Over the past few months, I have focused on improving my skills in MongoDB, Express, React, and Node.js by working on small projects and experimenting with technologies. I enjoy exploring new tools and approaches, and I am committed to continuously learning and delivering projects that demonstrate my growth as a developer.
+                  I am a fresher MERN stack developer with a strong passion for
+                  building web applications. Over the past few months, I have
+                  focused on improving my skills in MongoDB, Express, React, and
+                  Node.js by working on small projects and experimenting with
+                  technologies. I enjoy exploring new tools and approaches, and
+                  I am committed to continuously learning and delivering
+                  projects that demonstrate my growth as a developer.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
@@ -43,7 +52,7 @@ const AboutSection = () => {
               <div className="grid gap-4">
                 <div
                   className="rounded-lg border  text-card-foreground shadow-sm p-6 glass-effect hover-glow transition-smooth animate-fade-in"
-                  style={{animationDelay: "0s"}}
+                  style={{ animationDelay: "0s" }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400">
@@ -66,26 +75,16 @@ const AboutSection = () => {
                     <h4 className="font-semibold">Frontend</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      React
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Bootstrap
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      HTML5
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Tailwind CSS
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      CSS3
-                    </div>
+                    {frontend.map((skill, index) => (
+                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                        {skill}
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div
                   className="rounded-lg border  text-card-foreground shadow-sm p-6 glass-effect hover-glow transition-smooth animate-fade-in"
-                  style={{animationDelay: "0.1s"}}
+                  style={{ animationDelay: "0.1s" }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-green-500/10 text-green-400">
@@ -109,23 +108,16 @@ const AboutSection = () => {
                     <h4 className="font-semibold">Backend</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Node.js
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Express
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Mangodb
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      sql
-                    </div>
+                    {backend.map((skill, index) => (
+                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                        {skill}
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div
                   className="rounded-lg border  text-card-foreground shadow-sm p-6 glass-effect hover-glow transition-smooth animate-fade-in"
-                  style={{animationDelay: "0.2s"}}
+                  style={{ animationDelay: "0.2s" }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-purple-500/10 text-purple-400">
@@ -147,15 +139,11 @@ const AboutSection = () => {
                     <h4 className="font-semibold">Tools</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Git
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      Figma
-                    </div>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
-                      VS Code
-                    </div>
+                   {tools.map((skill, index) => (
+                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2  focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                        {skill}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
