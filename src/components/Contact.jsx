@@ -198,8 +198,8 @@ const Contact = () => {
                     Send Email
                   </a>
                   <a
-                    href=""
-                    // target="_blank"
+                    href="https://drive.google.com/file/d/1oblb4HUgMqNkF7tFCtMFTRxMxAxSLYAP/view?usp=sharing"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background bg-accent text-accent-foreground h-11 rounded-md px-8 w-full glass-effect hover-glow transition-bounce"
                   >
