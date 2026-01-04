@@ -8,11 +8,7 @@ import country from "../assets/country-flag.png";
 const projects = [
   {
     title: "ArkCart – Multi-Vendor E-Commerce Platform",
-<<<<<<< HEAD
     image: ecommers,
-=======
-    image: "../src/assets/ecommers.png",
->>>>>>> 3851f6a42d2eacf4a903fbb2f7dc7c4991902511
     tech: [
       "React",
       "Redux Toolkit",
@@ -32,11 +28,7 @@ const projects = [
   },
   {
     title: "Airbnb Clone – Full Stack Booking Platform",
-<<<<<<< HEAD
     image: airbnb,
-=======
-    image: "../src/assets/airbnb.png",
->>>>>>> 3851f6a42d2eacf4a903fbb2f7dc7c4991902511
     tech: [
       "Node.js",
       "Express.js",
@@ -55,11 +47,7 @@ const projects = [
   },
   {
     title: "Country Flag Explorer – React Application",
-<<<<<<< HEAD
     image: country,
-=======
-    image: "../src/assets/country-flag.png",
->>>>>>> 3851f6a42d2eacf4a903fbb2f7dc7c4991902511
     tech: ["React", "Context API", "React Router", "REST API", "CSS"],
     description:
       "A responsive React application consuming REST Countries API, featuring dynamic routing, region-based filtering, theme toggling, and shimmer loading states for improved user experience.",
