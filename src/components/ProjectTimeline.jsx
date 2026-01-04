@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import ProjectVideoModal from "./ProjectVideoModal";
 
 const projects = [
   {
@@ -18,7 +20,8 @@ const projects = [
     description:
       "A production-grade multi-vendor e-commerce platform supporting Users, Sellers/Admins, and a single Super Owner. Implemented JWT-based authentication, role-based authorization, owner-only seller approval workflow, secure Stripe checkout with webhook-driven order confirmation, and real-time cart management. Designed RESTful APIs and scalable backend architecture to handle multi-role access and order lifecycle management.",
     liveLink: "https://arak-cart.vercel.app/",
-    gitLink: "",
+    videoLink: "",
+    gitLink: "https://github.com/arakhitasabata635/ArakCart",
   },
   {
     title: "Airbnb Clone – Full Stack Booking Platform",
@@ -35,7 +38,8 @@ const projects = [
     ],
     description:
       "A full-stack Airbnb-style web application built using MVC architecture. Features secure session-based authentication, role-based access for Hosts and Guests, property listing management with image uploads, and MongoDB-backed session storage.",
-    liveLink: "https://github.com/arakhitasabata635/airbnb-backend-for-learning",
+    liveLink: "",
+    videoLink: "https://res.cloudinary.com/dah6qrspo/video/upload/v1767530057/airbnb_qneagj.mp4",
     gitLink: "https://github.com/arakhitasabata635/airbnb-backend-for-learning",
   },
   {
@@ -44,12 +48,15 @@ const projects = [
     tech: ["React", "Context API", "React Router", "REST API", "CSS"],
     description:
       "A responsive React application consuming REST Countries API, featuring dynamic routing, region-based filtering, theme toggling, and shimmer loading states for improved user experience.",
-    liveLink: "https://github.com/arakhitasabata635/country-flag-using-react",
+    liveLink: "",
+    videoLink: "https://res.cloudinary.com/dah6qrspo/video/upload/v1767530740/countryFlag_vepdry.mp4",
     gitLink: "https://github.com/arakhitasabata635/country-flag-using-react",
   },
 ];
 
 export default function ProjectTimeline() {
+  const [activeVideo, setActiveVideo] = useState(null);
+
   return (
     <section id="projects" className="relative py-20 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -119,17 +126,27 @@ export default function ProjectTimeline() {
                           </span>
                         ))}
                       </div>
+                      {project.liveLink ? (
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          className="text-primary font-medium"
+                        >
+                          View Live →
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() => setActiveVideo(project.videoLink)}
+                          className="text-primary font-medium"
+                        >
+                          Watch Demo →
+                        </button>
+                      )}
+
                       <a
-                        href={project.liveLink}
-                        target="_blank"
-                        className=" mt-2 text-sm font-medium text-primary block"
-                      >
-                        View Live →
-                      </a>
-                       <a
                         href={project.gitLink}
                         target="_blank"
-                        className=" mt-3 text-sm font-medium text-primary"
+                        className=" block mt-3 text-sm font-medium text-primary"
                       >
                         View Code →
                       </a>
@@ -149,6 +166,12 @@ export default function ProjectTimeline() {
                       <div className="w-5 h-5 rounded-full bg-primary absolute ml-[-10px]" />
                     </div>
                   </div>
+                  {activeVideo && (
+                    <ProjectVideoModal
+                      videoLink={project.videoLink}
+                      onClose={() => setActiveVideo(null)}
+                    />
+                  )}
                 </div>
               );
             })}
