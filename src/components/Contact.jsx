@@ -4,12 +4,18 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold ">
               Get In <span className="text-gradient">Touch</span>
             </h2>
+            <span className="inline-block mt-4 px-4 py-1 text-sm rounded-full bg-green-500/10 text-green-400">
+              Open to Internships & Entry-Level Roles
+            </span>
+
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I’m always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions. Feel free to reach out!
+              I’m a MERN Stack Developer who builds real-world, scalable web
+              applications. Currently open to internships, entry-level roles,
+              and freelance opportunities. Let’s build something impactful
+              together.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
@@ -17,7 +23,9 @@ const Contact = () => {
               <div className="rounded-lg border  text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth">
                 <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                   Feel free to reach out through any of these channels.
+                  Whether you’re a recruiter, founder, or fellow developer, I’m
+                  happy to connect and discuss opportunities, collaborations, or
+                  ideas.
                 </p>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
@@ -68,7 +76,7 @@ const Contact = () => {
                     <div>
                       <p className="font-medium">Phone</p>
                       <a
-                        href="tel:+91 8249696287"
+                        href="tel:+91 6352419017"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         +91 6352419017
@@ -95,7 +103,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">Berhampur, Odisha</p>
+                      <p className="text-muted-foreground">
+                        Open to Remote Opportunities
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -159,10 +169,11 @@ const Contact = () => {
                   Ready to Work Together?
                 </h3>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  “I’m currently open to internships, freelance projects, and
-                  entry-level opportunities. I’d love to collaborate and
-                  contribute to exciting projects. Let’s connect and bring ideas
-                  to life!”
+                  I’m actively seeking internships, entry-level developer roles,
+                  and freelance projects. I enjoy building full-stack
+                  applications with clean UI, secure authentication, and
+                  scalable backend systems. Let’s connect and create something
+                  meaningful.
                 </p>
                 <div className="space-y-4">
                   <a

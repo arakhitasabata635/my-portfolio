@@ -2,15 +2,26 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "ArkCart (E‑commerce)",
+    title: "ArkCart – Multi-Vendor E-Commerce Platform",
     image: "./src/assets/ecommers.png",
-    tech: ["React", "Redux Toolkit", "Stripe"],
+    tech: [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "Stripe Webhooks",
+      "Cloudinary",
+    ],
     description:
-      "Cart management, checkout, user login, and order summary with toast alerts.",
-    link: "#",
+      "A production-grade multi-vendor e-commerce platform supporting Users, Sellers/Admins, and a single Super Owner. Implemented JWT-based authentication, role-based authorization, owner-only seller approval workflow, secure Stripe checkout with webhook-driven order confirmation, and real-time cart management. Designed RESTful APIs and scalable backend architecture to handle multi-role access and order lifecycle management.",
+    liveLink: "https://arak-cart.vercel.app/",
+    gitLink: "",
   },
   {
-    title: "Airbnb Clone (Full-Stack)",
+    title: "Airbnb Clone – Full Stack Booking Platform",
     image: "./src/assets/airbnb.png",
     tech: [
       "Node.js",
@@ -23,25 +34,18 @@ const projects = [
       "Multer",
     ],
     description:
-      "A full-stack Airbnb-like web application with authentication, role-based access (Guest & Host), home listings, image uploads, favourites, and session-based login. Hosts can add, edit, and delete homes, while guests can browse, view details, and manage favourites.",
-    features: [
-      "User authentication with encrypted passwords (bcrypt)",
-      "Role-based access for Host and Guest users",
-      "CRUD operations for home listings",
-      "Image upload using Multer",
-      "Session management with MongoDB session store",
-      "Add / remove homes from favourites",
-      "Responsive UI using Tailwind CSS",
-    ],
-    link: "https://github.com/arakhitasabata635/airbnb-clone",
+      "A full-stack Airbnb-style web application built using MVC architecture. Features secure session-based authentication, role-based access for Hosts and Guests, property listing management with image uploads, and MongoDB-backed session storage.",
+    liveLink: "https://github.com/arakhitasabata635/airbnb-backend-for-learning",
+    gitLink: "https://github.com/arakhitasabata635/airbnb-backend-for-learning",
   },
   {
-    title: "Country Flag Explorer",
+    title: "Country Flag Explorer – React Application",
     image: "./src/assets/country-flag.png",
     tech: ["React", "Context API", "React Router", "REST API", "CSS"],
     description:
-      "A responsive React application that displays country details using the REST Countries API. Features include search and region-based filtering, dark/light theme toggle, dynamic routing for country details, border-country navigation, and shimmer loading for better UX.",
-    link: "https://github.com/arakhitasabata635/country-flag-using-react",
+      "A responsive React application consuming REST Countries API, featuring dynamic routing, region-based filtering, theme toggling, and shimmer loading states for improved user experience.",
+    liveLink: "https://github.com/arakhitasabata635/country-flag-using-react",
+    gitLink: "https://github.com/arakhitasabata635/country-flag-using-react",
   },
 ];
 
@@ -55,14 +59,14 @@ export default function ProjectTimeline() {
               My <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of projects showcasing my MERN stack skills
+              Real-world projects demonstrating my skills in full-stack
+              development, authentication, payments, and scalable backend
+              systems.
             </p>
           </div>
 
-          {/* Vertical center line */}
-
           <div className="space-y-20 relative">
-            {/* Vertical center line (desktop only) */}
+            {/* Vertical center line */}
             <div className=" md:block absolute md:left-1/2 top-0 h-full w-[2px] bg-primary" />
 
             {projects.map((project, index) => {
@@ -83,8 +87,8 @@ export default function ProjectTimeline() {
                         typeof window !== "undefined" && window.innerWidth < 768
                           ? 90
                           : isLeft
-                          ? -90
-                          : 90,
+                          ? 90
+                          : -90,
                     }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false, amount: 0.4 }}
@@ -116,11 +120,18 @@ export default function ProjectTimeline() {
                         ))}
                       </div>
                       <a
-                        href={project.link}
+                        href={project.liveLink}
                         target="_blank"
-                        className="inline-block mt-2 text-sm font-medium text-primary"
+                        className=" mt-2 text-sm font-medium text-primary block"
                       >
-                        View Project →
+                        View Live →
+                      </a>
+                       <a
+                        href={project.gitLink}
+                        target="_blank"
+                        className=" mt-3 text-sm font-medium text-primary"
+                      >
+                        View Code →
                       </a>
                     </div>
                   </motion.div>

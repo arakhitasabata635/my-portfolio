@@ -1,7 +1,31 @@
 const AboutSection = () => {
-  const frontend = ["React", "Bootstrap", "HTML5", "Tailwind CSS", "CSS3"];
-  const backend = ["Node.js", "Express.js", "MongoDB", "mySql"];
-  const tools = ["Git", "GitHub", "VS Code", "Figma"];
+  const languages = ["JavaScript (ES6+)", "HTML5", "CSS3"];
+  const frontend = [
+    "React",
+    "Redux Toolkit",
+    "Bootstrap",
+    "Tailwind CSS",
+  ];
+  const backend = [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "JWT Authentication",
+    "MongoDB",
+    "MySQL",
+  ];
+  const tools = [
+    "Cloudinary",
+    "Stripe (Test Mode)",
+    "Nodemailer",
+    "Git",
+    "GitHub",
+    "Vercel",
+    "Railway",
+    "Render",
+    "VS Code",
+    "Figma",
+  ];
 
   return (
     <section id="about" className="py-20 relative">
@@ -12,27 +36,45 @@ const AboutSection = () => {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Get to know me better and the technologies I work with
+              A quick overview of my background and technical skill set
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="rounded-lg border  text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth">
                 <h3 className="text-2xl font-semibold mb-4">My Story</h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  I am a fresher MERN stack developer with a strong passion for
-                  building web applications. Over the past few months, I have
-                  focused on improving my skills in MongoDB, Express, React, and
-                  Node.js by working on small projects and experimenting with
-                  technologies. I enjoy exploring new tools and approaches, and
-                  I am committed to continuously learning and delivering
-                  projects that demonstrate my growth as a developer.
+                <p className="text-muted-foreground leading-relaxed ">
+                  I am a MERN stack developer focused on building full-stack web
+                  applications with clean UI, scalable backend architecture, and
+                  secure APIs.
+                  <br />
+                  I have worked on multiple projects using MongoDB, Express,
+                  React, and Node.js, where I implemented authentication,
+                  payment flows, and real-world features.
+                  <br /> I enjoy learning new technologies, improving code
+                  quality, and turning ideas into working products. My goal is
+                  to grow as a professional developer by contributing to
+                  impactful, real-world applications.
                 </p>
+                <ul className="my-4 space-y-2 text-muted-foreground">
+                  <li>
+                    • Built 2+ full-stack web applications using MERN stack
+                  </li>
+                  <li>
+                    • Experience with RESTful APIs, JWT authentication, and
+                    role-based access
+                  </li>
+                  <li>
+                    • Implemented payment flows, file uploads, and email
+                    notifications
+                  </li>
+                </ul>
+
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <span className="font-medium">Location:</span>
                     <span className="text-muted-foreground">
-                      Hyderabad, Telangana
+                      Berhampur, Odisha
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -50,6 +92,43 @@ const AboutSection = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
               <div className="grid gap-4">
+                <div
+                  className="rounded-lg border text-card-foreground shadow-sm p-6 glass-effect hover-glow transition-smooth animate-fade-in"
+                  style={{ animationDelay: "0s" }}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 rounded-lg bg-orange-500/10 text-orange-400">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-braces w-5 h-5"
+                      >
+                        <path d="M8 3H6a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2" />
+                        <path d="M16 3h2a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2" />
+                      </svg>
+                    </div>
+                    <h4 className="font-semibold">Languages</h4>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {languages.map((skill, index) => (
+                      <div
+                        key={index}
+                        className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105"
+                      >
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 <div
                   className="rounded-lg border  text-card-foreground shadow-sm p-6 glass-effect hover-glow transition-smooth animate-fade-in"
                   style={{ animationDelay: "0s" }}
@@ -76,7 +155,10 @@ const AboutSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {frontend.map((skill, index) => (
-                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                      <div
+                        key={index}
+                        className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105"
+                      >
                         {skill}
                       </div>
                     ))}
@@ -109,7 +191,10 @@ const AboutSection = () => {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {backend.map((skill, index) => (
-                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                      <div
+                        key={index}
+                        className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105"
+                      >
                         {skill}
                       </div>
                     ))}
@@ -136,11 +221,14 @@ const AboutSection = () => {
                         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                       </svg>
                     </div>
-                    <h4 className="font-semibold">Tools</h4>
+                    <h4 className="font-semibold">Cloud & Tools</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                   {tools.map((skill, index) => (
-                      <div key={index} className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2  focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105">
+                    {tools.map((skill, index) => (
+                      <div
+                        key={index}
+                        className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2  focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-smooth hover:scale-105"
+                      >
                         {skill}
                       </div>
                     ))}

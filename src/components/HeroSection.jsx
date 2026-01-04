@@ -1,10 +1,11 @@
+import heroBg from "../assets/hero-bg.jpg";
 const HeroSection = () => {
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./src/assets/hero-bg.jpg"
+            src={heroBg}
             alt="Hero background"
             className="w-full h-full object-cover opacity-20"
           />
@@ -25,22 +26,19 @@ const HeroSection = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="animate-fade-in">
               <p className="text-lg text-muted-foreground mb-2">Hi, I'm</p>
-              <h1 className="text-5xl md:text-7xl font-bold mb-4">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
                 <span className="text-gradient">Arakhita Sabata</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
-                MERN Full Stack Developer
+                MERN Stack Developer | Full-Stack Web Engineer
               </h2>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-                I’m a passionate MERN stack developer skilled in building
-                responsive web applications using{" "}
-                <span className="text-yellow-400">MongoDB</span>,{" "}
-                <span className="text-yellow-400">Express</span>,{" "}
-                <span className="text-yellow-400">React</span>, and{" "}
-                <span className="text-yellow-400">Node.js</span>. Always eager
-                to learn and contribute to real-world projects.
+                I build scalable, real-world web applications using the{" "}
+                <span className="text-yellow-400">MERN</span> stack — focusing
+                on clean UI, secure APIs, and smooth user experiences. I enjoy
+                turning complex problems into simple, reliable solutions.
               </p>
             </div>
             <div
@@ -86,7 +84,7 @@ const HeroSection = () => {
                     <path d="M12 5v14"></path>
                     <path d="m19 12-7 7-7-7"></path>
                   </svg>
-                </button> 
+                </button>
               </a>
               <a
                 href=""

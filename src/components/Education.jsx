@@ -4,9 +4,13 @@ const Education = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold ">
               Education &amp; <span className="text-gradient">Learning</span>
             </h2>
+            <span className="inline-block mt-4 px-4 py-1 text-sm rounded-full bg-blue-500/10 text-blue-400">
+              Computer Science Background
+            </span>
+
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               My academic background and the progress I have made in learning
               practical skills recently.
@@ -14,7 +18,10 @@ const Education = () => {
           </div>
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
-              <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth animate-fade-in h-full" style={{animationDelay: "0s"}}>
+              <div
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth animate-fade-in h-full"
+                style={{ animationDelay: "0s" }}
+              >
                 <div className="mb-6">
                   <h4 className="text-xl font-bold mb-2">
                     Bachelor of Technology (B.Tech) – Computer Science &
@@ -38,7 +45,7 @@ const Education = () => {
                         <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                       </svg>
                       <span className="font-medium">
-                        sophitorium engineering college
+                        Sophitorium Engineering College
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -77,9 +84,7 @@ const Education = () => {
                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                         <path d="M3 10h18"></path>
                       </svg>
-                      <span>
-                        2023 - Present (Lateral Entry, 8th Semester Ongoing)
-                      </span>
+                      <span>2023 – Present (Lateral Entry, Final Year)</span>
                     </div>
                     <div className="flex items-start gap-2 ">
                       <svg
@@ -94,8 +99,9 @@ const Education = () => {
                         <path d="M3 17l6-6 4 4 8-8"></path>
                       </svg>
                       <span>
-                        Built a foundation in theoretical concepts and actively
-                        expanding practical skills in web development.
+                        Gained a strong foundation in computer science
+                        fundamentals while actively applying concepts through
+                        real-world full-stack projects using the MERN stack.
                       </span>
                     </div>
                   </div>
@@ -103,7 +109,10 @@ const Education = () => {
               </div>
             </div>
             <div className="space-y-8">
-              <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth animate-fade-in h-full" style={{animationDelay: "0.1s"}}>
+              <div
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-8 glass-effect hover-glow transition-smooth animate-fade-in h-full"
+                style={{ animationDelay: "0.1s" }}
+              >
                 <div className="mb-6">
                   <h4 className="text-xl font-bold mb-2">
                     Diploma in Computer Science and Engineering
