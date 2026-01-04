@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ProjectVideoModal from "./ProjectVideoModal";
+import airbnb from "../assets/airbnb.png";
+import ecommers from "../assets/ecommers.png";
+import country from "../assets/country-flag.png";
 
 const projects = [
   {
     title: "ArkCart – Multi-Vendor E-Commerce Platform",
-    image: "../src/assets/ecommers.png",
+    image: ecommers,
     tech: [
       "React",
       "Redux Toolkit",
@@ -25,7 +28,7 @@ const projects = [
   },
   {
     title: "Airbnb Clone – Full Stack Booking Platform",
-    image: "../src/assets/airbnb.png",
+    image: airbnb,
     tech: [
       "Node.js",
       "Express.js",
@@ -44,7 +47,7 @@ const projects = [
   },
   {
     title: "Country Flag Explorer – React Application",
-    image: "../src/assets/country-flag.png",
+    image: country,
     tech: ["React", "Context API", "React Router", "REST API", "CSS"],
     description:
       "A responsive React application consuming REST Countries API, featuring dynamic routing, region-based filtering, theme toggling, and shimmer loading states for improved user experience.",
