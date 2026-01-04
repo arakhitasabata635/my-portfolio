@@ -5,7 +5,7 @@ import ProjectVideoModal from "./ProjectVideoModal";
 const projects = [
   {
     title: "ArkCart – Multi-Vendor E-Commerce Platform",
-    image: "./src/assets/ecommers.png",
+    image: "../src/assets/ecommers.png",
     tech: [
       "React",
       "Redux Toolkit",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Airbnb Clone – Full Stack Booking Platform",
-    image: "./src/assets/airbnb.png",
+    image: "../src/assets/airbnb.png",
     tech: [
       "Node.js",
       "Express.js",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "Country Flag Explorer – React Application",
-    image: "./src/assets/country-flag.png",
+    image: "../src/assets/country-flag.png",
     tech: ["React", "Context API", "React Router", "REST API", "CSS"],
     description:
       "A responsive React application consuming REST Countries API, featuring dynamic routing, region-based filtering, theme toggling, and shimmer loading states for improved user experience.",
