@@ -169,9 +169,9 @@ export default function ProjectTimeline() {
                       <div className="w-5 h-5 rounded-full bg-primary absolute ml-[-10px]" />
                     </div>
                   </div>
-                  {activeVideo && (
+                    {activeVideo && (
                     <ProjectVideoModal
-                      videoLink={project.videoLink}
+                      videoLink={activeVideo}
                       onClose={() => setActiveVideo(null)}
                     />
                   )}
